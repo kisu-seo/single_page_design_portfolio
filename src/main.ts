@@ -12,8 +12,10 @@ if (slider && btnPrev && btnNext) {
   const getScrollAmount = (): number => {
     const firstSlide = slider.firstElementChild as HTMLElement | null;
     if (firstSlide) {
-      // 슬라이드 카드의 실제 너비 + gap(32px)을 기준으로 이동 거리 책정
-      return firstSlide.clientWidth + 32;
+      // 슬라이더의 실제 gap 스타일 값을 동적으로 읽어서 적용
+      const style = window.getComputedStyle(slider);
+      const gapValue = parseFloat(style.gap) || 32;
+      return firstSlide.clientWidth + gapValue;
     }
     return 300; // 기본 폴백 이동 거리
   };

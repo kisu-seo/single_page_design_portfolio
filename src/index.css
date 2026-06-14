@@ -111,4 +111,5 @@ body {
   background-color: var(--color-neutral-200);
   color: var(--color-neutral-900);
   font-family: var(--font-plus-jakarta);
+  border-radius: 0px;
 }
