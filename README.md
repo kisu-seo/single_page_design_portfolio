@@ -26,12 +26,11 @@
 
 ### Built with
 
-- **React 19** — Component-based architecture with clean separation of concerns. The main UI is modularized into `CardView` (card visualization), `CardForm` (user inputs), and `CompleteView` (success message) to ensure high reusability and structured data flow.
-- **React State Management (useState)** — Integrates unified states (`formData`, `errors`, `isSubmitted`) in the top-level `App` component, implementing solid one-way data binding to synchronize input entries and the card plate illustration in real time.
-- **Vite 8** — Utilized as the ultra-fast frontend build tool and local development server for instant Hot Module Replacement (HMR).
-- **Tailwind CSS v4** — Customizing utility classes such as `@theme` and `@utility` presets (e.g. `border-gradient-2-active` for the active input gradient outline) directly inside `src/index.css`, making stylesheets modular and eliminating the need for legacy configurations.
-- **Semantic HTML5 & Accessibility (A11y)** — Built with accessibility first. Links `<input>` items and `<label>` elements via unique IDs, manages real-time screen reader warnings using `role="alert"` alongside `aria-invalid`/`aria-describedby` mappings, and optimizes mobile text fields using `inputMode="numeric"` keys.
-- **Responsive Layout & Absolute Positioning** — Employs custom absolute positioning coordinates and responsive layout controls (`flex-col` on mobile viewports vs `flex-row` and `1440px` breakpoint boundaries on desktop viewports) to ensure card assets align seamlessly with the background artwork.
+- **TypeScript & Native DOM APIs** — Implements drag gesture scroll control, keyboard event mapping, and window resize listeners using vanilla TypeScript and native Web APIs, keeping the app lightweight and fast without framework overhead.
+- **Vite 8** — Utilized as the ultra-fast frontend build tool and local development server for instant hot module replacement (HMR) and optimized asset bundling.
+- **Tailwind CSS v4** — Customizes design system tokens using the new `@theme` configuration and `@utility` presets in `src/index.css` to manage custom spacing and typography classes.
+- **Semantic HTML5 & Accessibility (A11y)** — Built with accessibility in mind, leveraging semantic HTML structure, keyboard navigation controls, WAI-ARIA roles (`role="region"`, `role="contentinfo"`), and dynamic state indicators (`aria-disabled`).
+- **Responsive Layout & Fixed Tablet Wrapper** — Utilizes a layout wrapper that enforces a fixed 768px width on tablet screens while preserving fluid, adaptive layouts on mobile and desktop viewports.
 
 
 ## Author

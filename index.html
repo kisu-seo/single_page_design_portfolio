@@ -10,10 +10,17 @@
 
 <body class="bg-neutral-200 text-neutral-900 font-plus-jakarta antialiased min-h-screen flex flex-col rounded-none">
 
-  <!-- === [Layout Wrapper / 레이아웃 래퍼 영역] === -->
+  <!-- ==========================================
+       === [Layout Wrapper / 글로벌 레이아웃 래퍼] ===
+       ==========================================
+       태블릿 해상도(md 뷰포트)에서 레이아웃 너비를 768px로 고정하고 가로 중앙 정렬을 제공합니다.
+       모바일 및 데스크탑 뷰포트에서는 유동적인 반응형 너비를 유지합니다. -->
   <div class="w-full md:w-[768px] md:mx-auto lg:w-full flex-grow flex flex-col">
 
-    <!-- === [Header / 헤더 영역] === -->
+    <!-- ==========================================
+         === [Header / 상단 헤더 네비게이션 영역] ===
+         ==========================================
+         웹사이트의 정체성을 보여주는 브랜드 로고와 퀵 링크 액션 버튼(무료 상담 예약)으로 구성됩니다. -->
   <header class="max-w-7xl w-full mx-auto px-4 sm:px-8 pt-6 pb-0 sm:pt-6 sm:pb-6 md:pb-0 min-[1028px]:pt-8 min-[1028px]:max-w-[1110px] lg:px-0 flex items-center justify-between"
     role="banner">
     <a href="#" aria-label="홈으로 이동" class="focus-visible:outline-none rounded-lg">
@@ -27,7 +34,10 @@
 
   <main class="flex-grow">
 
-    <!-- === [Hero Section / 히어로 섹션] === -->
+    <!-- ==========================================
+         === [Hero Section / 메인 히어로 소개 영역] ===
+         ==========================================
+         디자이너의 주요 가치 제안 및 한 줄 소개 문구를 담은 주요 스포트라이트 영역입니다. -->
     <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-10 pb-[20px] sm:pt-16 sm:pb-16 md:pt-16 lg:pt-20 lg:pb-1000 lg:max-w-[752px] lg:px-0 text-center" aria-labelledby="hero-heading">
       <h1 id="hero-heading" class="text-preset-1-mobile md:text-preset-1 text-neutral-900 mb-[20px] sm:mb-8 md:mb-5 md:max-w-[538px] lg:max-w-[752px] md:mx-auto lg:mx-auto">Design
         solutions made easy</h1>
@@ -36,13 +46,16 @@
       </p>
     </section>
 
-    <!-- === [Portfolio Grid / 포트폴리오 그리드 섹션] === -->
+    <!-- ==========================================
+         === [Portfolio Grid / 포트폴리오 작업 분류 그리드] ===
+         ==========================================
+         디자이너의 전문 분야별 작업 카테고리를 비대칭 2차원 그리드 카드 형태로 시각화합니다. -->
     <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-[20px] pb-0 sm:pt-0 sm:pb-16 md:pb-10 lg:pb-[60px] lg:max-w-[1110px] lg:px-0" aria-labelledby="portfolio-heading">
       <h2 id="portfolio-heading" class="sr-only">Portfolio</h2>
 
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-250 sm:gap-6 md:gap-250 lg:gap-300 lg:h-[364px]">
 
-        <!-- Graphic Design -->
+        <!-- [Grid Item: Graphic Design / 그래픽 디자인 분야 카드] -->
         <div
           class="col-span-2 row-span-2 bg-galactic-blue-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-300 rounded-8 relative min-h-[300px] md:w-[342px] md:h-[367px] md:min-h-[367px] lg:w-auto lg:h-auto lg:min-h-[300px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-graphic-design.svg" alt=""
@@ -51,7 +64,7 @@
           <h3 class="text-preset-3 mt-auto">Graphic Design</h3>
         </div>
 
-        <!-- UI/UX -->
+        <!-- [Grid Item: UI/UX / 사용자 인터페이스 및 경험 디자인 카드] -->
         <div
           class="col-span-1 bg-summer-yellow-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-250 rounded-8 relative min-h-[180px] md:w-[159px] md:h-[182px] md:min-h-[182px] md:mr-1 lg:mr-0 lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-ui-ux.svg" alt=""
@@ -60,7 +73,7 @@
           <h3 class="text-preset-3 mt-auto">UI/UX</h3>
         </div>
 
-        <!-- Apps -->
+        <!-- [Grid Item: Apps / 모바일 및 웹 어플리케이션 디자인 카드] -->
         <div
           class="col-span-1 bg-pink-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-250 rounded-8 relative min-h-[180px] md:w-[159px] md:h-[182px] md:min-h-[182px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-apps.svg" alt=""
@@ -69,7 +82,7 @@
           <h3 class="text-preset-3 mt-auto">Apps</h3>
         </div>
 
-        <!-- Photography -->
+        <!-- [Grid Item: Photography / 사진 및 미디어 촬영 분야 카드] -->
         <div
           class="col-span-2 bg-cyan-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-250 rounded-8 relative min-h-[180px] md:w-[342px] md:h-[182px] md:min-h-[182px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-photography.svg" alt=""
@@ -78,7 +91,7 @@
           <h3 class="text-preset-3 mt-auto">Photography</h3>
         </div>
 
-        <!-- Illustrations -->
+        <!-- [Grid Item: Illustrations / 브랜드 일러스트레이션 아트웍 카드] -->
         <div
           class="col-span-2 bg-light-red-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-250 rounded-8 relative min-h-[180px] md:w-[342px] md:h-[162px] md:min-h-[162px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-illustrations.svg" alt=""
@@ -87,7 +100,7 @@
           <h3 class="text-preset-3 mt-auto">Illustrations</h3>
         </div>
 
-        <!-- Motion Graphics -->
+        <!-- [Grid Item: Motion Graphics / 비디오 및 모션 그래픽 분야 카드] -->
         <div
           class="col-span-2 bg-dark-purple-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-250 rounded-8 relative min-h-[180px] md:w-[342px] md:h-[182px] md:min-h-[182px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-motion-graphics.svg" alt=""
@@ -99,7 +112,10 @@
       </div>
     </section>
 
-    <!-- === [About Section / Amy 프로필 소개 섹션] === -->
+    <!-- ==========================================
+         === [About Section / Amy 프로필 상세 소개] ===
+         ==========================================
+         디자이너의 실무 철학, 이력 개요, 그리고 상담을 유도하는 CTA(Call to Action) 영역입니다. -->
     <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-16 pb-8 sm:pt-16 sm:pb-16 md:pt-10 md:pb-10 lg:pt-[60px] lg:pb-[60px] lg:max-w-[1110px] lg:px-0 flex flex-col lg:flex-row items-center gap-6 sm:gap-12 md:gap-6 lg:gap-[125px]"
       aria-labelledby="about-heading">
       <div class="w-[300px] h-[300px] lg:w-[445px] lg:h-[445px] flex-shrink-0">
@@ -120,13 +136,16 @@
       </div>
     </section>
 
-    <!-- === [Slider Section / 포트폴리오 슬라이더 섹션] === -->
+    <!-- ==========================================
+         === [Slider Section / 포트폴리오 작업물 스냅 슬라이더] ===
+         ==========================================
+         이전/다음 화살표 버튼 탐색 및 마우스 스크롤/드래그가 연동되는 반응형 이미지 슬라이더 영역입니다. -->
     <section class="pt-8 pb-8 sm:pt-16 sm:pb-16 md:pt-10 md:pb-10 lg:pt-[60px] lg:pb-[60px] overflow-hidden flex flex-col items-center" aria-labelledby="slider-heading">
       <h2 id="slider-heading" class="text-preset-1-mobile sm:text-preset-3 md:text-preset-2 lg:text-preset-2 text-neutral-900 mb-10 md:mb-12 lg:mb-600 text-center">
         My Work
       </h2>
 
-      <!-- Carousel Slider Container -->
+      <!-- [Carousel Slider Container / 수평 터치 스크롤 컨테이너] -->
       <div class="w-full relative px-0">
         <div id="portfolio-slider"
           class="flex gap-5 sm:gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar py-0 sm:py-4 md:py-0 lg:py-0 px-[10vw] sm:px-[20vw] cursor-grab active:cursor-grabbing scroll-smooth focus:outline-none"
@@ -159,7 +178,7 @@
         </div>
       </div>
 
-      <!-- Slider Controls (Navigation Buttons) -->
+      <!-- [Slider Controls / 네비게이션 제어 컨트롤러] -->
       <div class="flex gap-4 mt-10 sm:mt-8 md:mt-12 lg:mt-600">
         <button id="btn-prev" aria-label="이전 슬라이드로 이동"
           class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-neutral-900 lg:hover:bg-galactic-blue-500 text-neutral-0 flex items-center justify-center transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500 disabled:opacity-40 disabled:cursor-not-allowed">
@@ -172,7 +191,10 @@
       </div>
     </section>
 
-    <!-- === [CTA Section / 무료 상담 예약 안내 카드] === -->
+    <!-- ==========================================
+         === [CTA Section / 무료 디자인 상담 예약 카드] ===
+         ==========================================
+         화면 톤앤매너 전환을 위한 반전 배경색(다크 네이비 카드)과 예약 상담으로 즉시 전환을 돕는 CTA 영역입니다. -->
     <section id="consultation" class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 pb-0 sm:pt-16 sm:pb-16 md:pt-10 md:pb-4 lg:pt-[60px] lg:pb-300 lg:max-w-[1110px] lg:px-0" aria-labelledby="cta-heading">
       <div
         class="bg-neutral-900 text-neutral-0 px-4 py-10 sm:px-16 sm:py-20 md:px-10 md:py-16 lg:px-800 lg:py-1000 rounded-10 flex flex-col lg:flex-row items-center justify-between gap-10 sm:gap-12 md:gap-10 lg:gap-12">
@@ -196,7 +218,10 @@
 
   </main>
 
-  <!-- === [Footer / 푸터 영역] === -->
+  <!-- ==========================================
+       === [Footer / 하단 푸터 영역] ===
+       ==========================================
+       저작권, 약관 또는 홈 바로가기 로고 및 최하단 무료 상담 예약 링크가 포함되는 영역입니다. -->
   <footer
     class="max-w-7xl w-full mx-auto px-4 sm:px-8 pt-8 pb-6 sm:py-8 md:pb-10 lg:pt-300 lg:pb-800 lg:max-w-[1110px] lg:px-0 flex items-center justify-between"
     role="contentinfo">
