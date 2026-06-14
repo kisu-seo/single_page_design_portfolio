@@ -11,13 +11,13 @@
 <body class="bg-neutral-200 text-neutral-900 font-plus-jakarta antialiased min-h-screen flex flex-col rounded-none">
 
   <!-- === [Header / 헤더 영역] === -->
-  <header class="max-w-7xl w-full mx-auto px-4 sm:px-8 pt-6 pb-0 sm:py-6 flex items-center justify-between"
+  <header class="max-w-7xl w-full mx-auto px-4 sm:px-8 pt-6 pb-0 sm:pt-6 sm:pb-6 md:pb-0 flex items-center justify-between"
     role="banner">
     <a href="#" aria-label="홈으로 이동" class="focus-visible:outline-2 focus-visible:outline-galactic-blue-500 rounded-lg">
       <img src="./assets/logo.svg" alt="디자인 포트폴리오 로고" class="w-12 h-12 md:w-16 md:h-16">
     </a>
     <a href="#consultation"
-      class="bg-neutral-900 sm:hover:bg-galactic-blue-500 text-neutral-0 text-preset-5 px-7 py-3.5 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500">
+      class="bg-neutral-900 lg:hover:bg-galactic-blue-500 text-neutral-200 text-preset-5 px-7 py-3.5 md:inline-flex md:items-center md:justify-center md:w-[234px] md:h-[56px] md:px-0 md:py-0 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500">
       Free Consultation
     </a>
   </header>
@@ -25,23 +25,23 @@
   <main class="flex-grow">
 
     <!-- === [Hero Section / 히어로 섹션] === -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-10 pb-[20px] sm:py-16 text-center" aria-labelledby="hero-heading">
-      <h1 id="hero-heading" class="text-preset-1-mobile sm:text-preset-1 text-neutral-900 mb-[20px] sm:mb-8">Design
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-10 pb-[20px] sm:pt-16 sm:pb-16 md:pt-16 text-center" aria-labelledby="hero-heading">
+      <h1 id="hero-heading" class="text-preset-1-mobile md:text-preset-1 text-neutral-900 mb-[20px] sm:mb-8 md:mb-5 md:max-w-[538px] md:mx-auto">Design
         solutions made easy</h1>
-      <p class="text-preset-4 text-neutral-400 max-w-2xl mx-auto">
+      <p class="text-preset-4 text-neutral-400 max-w-2xl mx-auto md:max-w-[596px]">
         With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
       </p>
     </section>
 
     <!-- === [Portfolio Grid / 포트폴리오 그리드 섹션] === -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-[20px] pb-0 sm:pt-0 sm:pb-16" aria-labelledby="portfolio-heading">
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-[20px] pb-0 sm:pt-0 sm:pb-16 md:pb-10 lg:pb-16" aria-labelledby="portfolio-heading">
       <h2 id="portfolio-heading" class="sr-only">Portfolio</h2>
 
-      <div class="grid grid-cols-6 gap-x-6 gap-y-250 sm:gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-250 sm:gap-6 md:gap-250 lg:gap-6">
 
         <!-- Graphic Design -->
         <div
-          class="col-span-6 sm:col-span-3 lg:col-span-2 row-span-2 bg-galactic-blue-500 text-neutral-0 p-250 sm:p-6 rounded-2xl relative min-h-[300px] flex flex-col justify-between overflow-hidden group sm:hover:scale-[1.02] transition-transform duration-300">
+          class="col-span-2 row-span-2 bg-galactic-blue-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-6 rounded-8 relative min-h-[300px] md:w-[342px] md:h-[367px] md:min-h-[367px] lg:w-auto lg:h-auto lg:min-h-[300px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-graphic-design.svg" alt=""
             class="absolute top-0 right-0 p-250 sm:p-6 object-contain pointer-events-none" aria-hidden="true">
           <div class="h-12"></div>
@@ -50,7 +50,7 @@
 
         <!-- UI/UX -->
         <div
-          class="col-span-3 sm:col-span-1.5 lg:col-span-1 bg-summer-yellow-500 text-neutral-0 p-250 sm:p-6 rounded-2xl relative min-h-[180px] flex flex-col justify-between overflow-hidden group sm:hover:scale-[1.02] transition-transform duration-300">
+          class="col-span-1 bg-summer-yellow-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-6 rounded-8 relative min-h-[180px] md:w-[159px] md:h-[182px] md:min-h-[182px] md:mr-1 lg:mr-0 lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-ui-ux.svg" alt=""
             class="absolute top-0 right-0 p-250 sm:p-6 object-contain pointer-events-none" aria-hidden="true">
           <div class="h-12"></div>
@@ -59,7 +59,7 @@
 
         <!-- Apps -->
         <div
-          class="col-span-3 sm:col-span-1.5 lg:col-span-1 bg-pink-500 text-neutral-0 p-250 sm:p-6 rounded-2xl relative min-h-[180px] flex flex-col justify-between overflow-hidden group sm:hover:scale-[1.02] transition-transform duration-300">
+          class="col-span-1 bg-pink-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-6 rounded-8 relative min-h-[180px] md:w-[159px] md:h-[182px] md:min-h-[182px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-apps.svg" alt=""
             class="absolute top-0 right-0 p-250 sm:p-6 object-contain pointer-events-none" aria-hidden="true">
           <div class="h-12"></div>
@@ -68,7 +68,7 @@
 
         <!-- Illustrations -->
         <div
-          class="col-span-6 sm:col-span-3 lg:col-span-2 bg-light-red-500 text-neutral-0 p-250 sm:p-6 rounded-2xl relative min-h-[180px] flex flex-col justify-between overflow-hidden group sm:hover:scale-[1.02] transition-transform duration-300">
+          class="col-span-2 bg-light-red-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-6 rounded-8 relative min-h-[180px] md:w-[342px] md:h-[162px] md:min-h-[162px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-illustrations.svg" alt=""
             class="absolute top-0 right-0 p-250 sm:p-6 object-contain pointer-events-none" aria-hidden="true">
           <div class="h-12"></div>
@@ -77,7 +77,7 @@
 
         <!-- Photography -->
         <div
-          class="col-span-6 sm:col-span-3 lg:col-span-2 bg-cyan-500 text-neutral-0 p-250 sm:p-6 rounded-2xl relative min-h-[180px] flex flex-col justify-between overflow-hidden group sm:hover:scale-[1.02] transition-transform duration-300">
+          class="col-span-2 bg-cyan-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-6 rounded-8 relative min-h-[180px] md:w-[342px] md:h-[182px] md:min-h-[182px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-photography.svg" alt=""
             class="absolute top-0 right-0 p-250 sm:p-6 object-contain pointer-events-none" aria-hidden="true">
           <div class="h-12"></div>
@@ -86,7 +86,7 @@
 
         <!-- Motion Graphics -->
         <div
-          class="col-span-6 sm:col-span-3 lg:col-span-2 bg-dark-purple-500 text-neutral-0 p-250 sm:p-6 rounded-2xl relative min-h-[180px] flex flex-col justify-between overflow-hidden group sm:hover:scale-[1.02] transition-transform duration-300">
+          class="col-span-2 bg-dark-purple-500 text-neutral-0 p-250 sm:p-6 md:p-250 lg:p-6 rounded-8 relative min-h-[180px] md:w-[342px] md:h-[182px] md:min-h-[182px] lg:w-auto lg:h-auto lg:min-h-[180px] flex flex-col justify-between overflow-hidden group lg:hover:scale-[1.02] transition-transform duration-300">
           <img src="./assets/pattern-motion-graphics.svg" alt=""
             class="absolute top-0 right-0 p-250 sm:p-6 object-contain pointer-events-none" aria-hidden="true">
           <div class="h-12"></div>
@@ -97,13 +97,13 @@
     </section>
 
     <!-- === [About Section / Amy 프로필 소개 섹션] === -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-16 pb-8 sm:py-16 flex flex-col lg:flex-row items-center gap-6 sm:gap-12 lg:gap-24"
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-16 pb-8 sm:pt-16 sm:pb-16 md:pt-10 md:pb-10 lg:pt-16 lg:pb-16 flex flex-col lg:flex-row items-center gap-6 sm:gap-12 md:gap-6 lg:gap-24"
       aria-labelledby="about-heading">
-      <div class="w-[300px] h-[300px] sm:w-full sm:h-auto sm:max-w-[440px] flex-shrink-0">
-        <img src="./assets/image-amy.webp" alt="Amy의 웃고 있는 프로필 사진" class="w-full h-full sm:h-auto rounded-full object-cover">
+      <div class="w-[300px] h-[300px] lg:w-full lg:h-auto lg:max-w-[440px] flex-shrink-0">
+        <img src="./assets/image-amy.webp" alt="Amy의 웃고 있는 프로필 사진" class="w-full h-full lg:h-auto rounded-full object-cover">
       </div>
       <div class="flex-grow text-center lg:text-left">
-        <h2 id="about-heading" class="text-preset-2 text-neutral-900 mb-5 sm:mb-6 lg:max-w-xl">
+        <h2 id="about-heading" class="text-preset-2 text-neutral-900 mb-5 sm:mb-6 md:mb-5 lg:mb-6 lg:max-w-xl">
           I’m Amy, and I’d love to work on your next project
         </h2>
         <p class="text-preset-4 text-neutral-400 mb-8 lg:max-w-xl">
@@ -111,22 +111,22 @@
           illustrations to complete mobile apps. I’m also handy with a camera!
         </p>
         <a href="#consultation"
-          class="inline-block bg-light-red-500 sm:hover:bg-summer-yellow-500 text-neutral-0 text-preset-5 px-10 py-4 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-red-500">
+          class="inline-block bg-light-red-500 lg:hover:bg-summer-yellow-500 text-neutral-200 text-preset-5 px-10 py-4 md:inline-flex md:items-center md:justify-center md:w-[234px] md:h-[56px] md:px-0 md:py-0 lg:inline-block lg:w-auto lg:h-auto lg:px-10 lg:py-4 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-red-500">
           Free Consultation
         </a>
       </div>
     </section>
 
     <!-- === [Slider Section / 포트폴리오 슬라이더 섹션] === -->
-    <section class="pt-8 pb-8 sm:py-16 overflow-hidden flex flex-col items-center" aria-labelledby="slider-heading">
-      <h2 id="slider-heading" class="text-preset-1-mobile sm:text-preset-3 text-neutral-900 mb-10 text-center">
+    <section class="pt-8 pb-8 sm:pt-16 sm:pb-16 md:pt-10 md:pb-10 lg:pt-16 lg:pb-16 overflow-hidden flex flex-col items-center" aria-labelledby="slider-heading">
+      <h2 id="slider-heading" class="text-preset-1-mobile sm:text-preset-3 md:text-preset-2 lg:text-preset-3 text-neutral-900 mb-10 md:mb-12 lg:mb-10 text-center">
         My Work
       </h2>
 
       <!-- Carousel Slider Container -->
       <div class="w-full relative px-0">
         <div id="portfolio-slider"
-          class="flex gap-5 sm:gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar py-0 sm:py-4 px-[10vw] sm:px-[20vw] cursor-grab active:cursor-grabbing scroll-smooth"
+          class="flex gap-5 sm:gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar py-0 sm:py-4 md:py-0 lg:py-4 px-[10vw] sm:px-[20vw] cursor-grab active:cursor-grabbing scroll-smooth"
           role="region" aria-roledescription="carousel" aria-label="디자인 작업물 슬라이더">
           <div class="snap-center flex-shrink-0 w-[270px] sm:w-[540px] rounded-8 overflow-hidden shadow-lg"
             role="group" aria-roledescription="slide" aria-label="작업물 1">
@@ -157,34 +157,34 @@
       </div>
 
       <!-- Slider Controls (Navigation Buttons) -->
-      <div class="flex gap-4 mt-10 sm:mt-8">
+      <div class="flex gap-4 mt-10 sm:mt-8 md:mt-12 lg:mt-8">
         <button id="btn-prev" aria-label="이전 슬라이드로 이동"
-          class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-neutral-900 sm:hover:bg-galactic-blue-500 text-neutral-0 flex items-center justify-center transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500 disabled:opacity-40 disabled:cursor-not-allowed">
+          class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-14 lg:h-14 rounded-full bg-neutral-900 lg:hover:bg-galactic-blue-500 text-neutral-0 flex items-center justify-center transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500 disabled:opacity-40 disabled:cursor-not-allowed">
           <img src="./assets/icon-arrow-left.svg" alt="" aria-hidden="true" class="w-4 h-4">
         </button>
         <button id="btn-next" aria-label="다음 슬라이드로 이동"
-          class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-neutral-900 sm:hover:bg-galactic-blue-500 text-neutral-0 flex items-center justify-center transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500 disabled:opacity-40 disabled:cursor-not-allowed">
+          class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-14 lg:h-14 rounded-full bg-neutral-900 lg:hover:bg-galactic-blue-500 text-neutral-0 flex items-center justify-center transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500 disabled:opacity-40 disabled:cursor-not-allowed">
           <img src="./assets/icon-arrow-right.svg" alt="" aria-hidden="true" class="w-4 h-4">
         </button>
       </div>
     </section>
 
     <!-- === [CTA Section / 무료 상담 예약 안내 카드] === -->
-    <section id="consultation" class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 pb-0 sm:py-16" aria-labelledby="cta-heading">
+    <section id="consultation" class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 pb-0 sm:pt-16 sm:pb-16 md:pt-10 md:pb-4 lg:pt-16 lg:pb-16" aria-labelledby="cta-heading">
       <div
-        class="bg-neutral-900 text-neutral-0 px-4 py-10 sm:px-16 sm:py-20 rounded-10 flex flex-col lg:flex-row items-center justify-between gap-10 sm:gap-12">
+        class="bg-neutral-900 text-neutral-0 px-4 py-10 sm:px-16 sm:py-20 md:px-10 md:py-16 lg:px-16 lg:py-20 rounded-10 flex flex-col lg:flex-row items-center justify-between gap-10 sm:gap-12 md:gap-10 lg:gap-12">
         <div class="text-center lg:text-left max-w-xl">
-          <h2 id="cta-heading" class="text-preset-1-mobile sm:text-preset-2 mb-6 text-neutral-0">
+          <h2 id="cta-heading" class="text-preset-1-mobile sm:text-preset-2 mb-6 text-neutral-200">
             Book a call with me
           </h2>
-          <p class="text-preset-4 text-neutral-200">
+          <p class="text-preset-4 text-neutral-200 md:max-w-[540px] lg:max-w-none">
             I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project
             during a free consultation. Then we can move forward from there.
           </p>
         </div>
         <div class="flex-shrink-0">
           <a href="#"
-            class="flex items-center justify-center mx-auto w-[234px] h-[56px] py-4 px-12 sm:inline-block sm:w-auto sm:h-auto sm:px-10 sm:py-4 bg-light-red-500 sm:hover:bg-summer-yellow-500 text-neutral-0 text-preset-5 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-red-500">
+            class="flex items-center justify-center mx-auto w-[234px] h-[56px] py-4 px-12 sm:inline-block sm:w-auto sm:h-auto sm:px-10 sm:py-4 md:inline-flex md:items-center md:justify-center md:w-[234px] md:h-[56px] md:px-0 md:py-0 lg:inline-block lg:w-auto lg:h-auto lg:px-10 lg:py-4 bg-light-red-500 lg:hover:bg-summer-yellow-500 text-neutral-200 text-preset-5 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-red-500">
             Free Consultation
           </a>
         </div>
@@ -195,13 +195,13 @@
 
   <!-- === [Footer / 푸터 영역] === -->
   <footer
-    class="max-w-7xl w-full mx-auto px-4 sm:px-8 pt-8 pb-6 sm:py-8 flex items-center justify-between"
+    class="max-w-7xl w-full mx-auto px-4 sm:px-8 pt-8 pb-6 sm:py-8 md:pb-10 lg:pb-8 flex items-center justify-between"
     role="contentinfo">
     <a href="#" aria-label="홈으로 이동" class="focus-visible:outline-2 focus-visible:outline-galactic-blue-500 rounded-lg">
-      <img src="./assets/logo.svg" alt="디자인 포트폴리오 로고" class="w-12 h-12">
+      <img src="./assets/logo.svg" alt="디자인 포트폴리오 로고" class="w-12 h-12 md:w-16 md:h-16">
     </a>
     <a href="#consultation"
-      class="bg-neutral-900 sm:hover:bg-galactic-blue-500 text-neutral-0 text-preset-5 px-7 py-3.5 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500">
+      class="bg-neutral-900 lg:hover:bg-galactic-blue-500 text-neutral-200 text-preset-5 px-7 py-3.5 md:inline-flex md:items-center md:justify-center md:w-[234px] md:h-[56px] md:px-0 md:py-0 lg:inline-block lg:w-auto lg:h-auto lg:px-7 lg:py-3.5 rounded-full transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-galactic-blue-500">
       Free Consultation
     </a>
   </footer>
